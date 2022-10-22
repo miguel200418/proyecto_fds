@@ -1,0 +1,145 @@
+/* ------------------------------------------------------------------------------------- */
+/* -------------------------- I. GENERALIDADES DEL CONTENIDO --------------------------- */
+/* ------------------------------------------------------------------------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.borde{
+    border: 1px solid black;
+}
+.titulo{
+    height: 50px;
+    background-color:#0D59B2  ;
+}
+/* ------------------------------------------------------------------------------------- */
+/* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
+/* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/*contenedor*/
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    border-top: 0;
+}
+/*navegador*/
+nav{
+    height: 50px;
+    width: 100%;
+}
+/*logo*/
+.logo{
+    width: 10%;
+    height: 100%;
+    background-color: #0D59B2 ;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+.logo img{
+    width: 70%;
+    height: 100%;
+    
+    
+}
+/*menu*/
+.menu{
+    width: 65%;
+    height: 100%;
+    background-color: #5FA9FF ;
+    float: left;
+}
+/*ingreso*/
+.ingreso{
+    width: 15%;
+    height: 100%;
+    background-color: #0D59B2;
+    float: left;
+}
+/* encabezado y secciones*/
+header, section{
+    height: 600px;
+}
+section img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+footer{
+    width: 100%;
+    height: 70px;
+}
+.color-negro{
+    background-color: #5FA9FF;
+}
+.color-blanco{
+    background-color: #fff;
+}
+
+.color-gris-osc{
+    background-color: #0000;
+}
+.color-gris-clr{
+    background-color: #000;
+}
+
+/*portafolio*/
+.port-col{
+    width: 33.33%;
+    height: 100%;
+    padding: 20px;
+    background-color: #5FA9FF;
+    text-align: center;
+    float: left;
+}
+.port-col img{
+    width: 150px;
+    height: 150px;
+    border: radius 50%;
+}
+/*nosotros*/
+.nos-fila{
+    width: 100%;
+    height: 33.33%;
+}
+.nos-col-ext{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.nos-col-cnt{
+    width: 20%;
+    height: 100%;
+    padding: 25px;
+    text-align: center;
+    float: left;
+}
+/*contactenos*/
+.cont-col{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.cont-fila-arr{
+    width: 100%;
+    height: 70%;
+}
+.cont-fila-abj{
+    width: 100%;
+    height: 30%;
+}
+
+/* .header{
+    display: flex;
+}
+.caja{    
+    justify-content: space-between;
+    
+} */
+ /*Responsive Design*/
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
+/* -------------------------------------- TABLETS -------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
