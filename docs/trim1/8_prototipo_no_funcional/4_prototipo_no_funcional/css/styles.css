@@ -1,44 +1,133 @@
 /* ------------------------------------------------------------------------------------- */
 /* -------------------------- I. GENERALIDADES DEL CONTENIDO --------------------------- */
 /* ------------------------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------- */
+/* CLASES ESPECIALES ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* Selector Universal */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+/*cuerpo*/
+body{
+    background-color: #fff;
+}
+/*borde*/
 .borde{
-    border: 1px solid black;
+    border: 1px solid #000;
 }
+/* Fondo color Negro */
+.color-negro{
+    background: #000;
+}
+/* Fondo color gris oscuro */
+.color-gris-oscuro{
+    background: #777777;
+}
+/* Fondo color gris claro */
+.color-gris-claro{
+    background: #AAAAAA;
+}
+/* Fondo color blanco */
+.color-blanco{
+    background: #FFF;
+}
+.clear{
+    clear: both;
+}
+/* ------------------------------------------------------------------------------------- */
+/* FUENTES: ROBOTO Y YANONE ------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
+/* ------------------------------------------------------------------------------------- */
+/* TEXTO: TÍTULOS, SUBTÍTULOS Y PÁRRAFOS ----------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/*titulo*/
 .titulo{
-    height: 70px;
-    background-color:#1525DB;
+    height: 50px;
+    background-color:#0D59B2  ;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #FFF;
+    text-align: center;
+    padding: 20px;
 }
+/* Subtítulos */
+.subtitulo{
+    font-family: 'Roboto', sans-serif;
+    background: #CCC;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+/* Párrafos */
+.parrafo{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    padding: 10px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* IMÁGENES ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+.imagen{
+	text-align: center;
+    padding: 10px;
+}
+.imagen img{	
+	width: 150px;
+    height: auto;	
+}
+/* ------------------------------------------------------------------------------------- */
+/* BOTONES DE ENLACE ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+.ver{
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+    background: #CCC;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+.ver a{
+	
+}
+.ver a:hover{
+	
+}
+
+
 /* ------------------------------------------------------------------------------------- */
 /* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
 /* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /*contenedor*/
 .contenedor{
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     margin: auto;
+    border-top: 0;
 }
 /*navegador*/
 nav{
+    height: 50px;
     width: 100%;
-    height: 100px;
+    border-bottom: 2px solid #000;
 }
 /*logo*/
 .logo{
     width: 20%;
     height: 100%;
-    background-color: #3ce6a7 ;
+    /*/background-color: #0D59B2 ;*/
     float: left;
-    text-align: center;
-    padding: 10px;
+    /*text-align: center;*/
+    /*padding: 10px;*/
 }
 .logo img{
-    width: 70%;
+    width: 100%;
     height: 100%;
     
     
@@ -47,31 +136,42 @@ nav{
 .menu{
     width: 65%;
     height: 100%;
-    background-color: #3EF07C ;
+    background-color: #5FA9FF ;
     float: left;
 }
 /*ingreso*/
 .ingreso{
     width: 15%;
     height: 100%;
-    background-color: aqua;
+    background-color: #0D59B2;
     float: left;
 }
 /* encabezado y secciones*/
 header, section{
-    height: 700px;
+    height: 600px;
+    min-height: 600px;
+}
+header{
+    background-image: url(../img/sena.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+section img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 /*portafolio*/
+.portafolio{
+    min-height: 600px;
+}
 .port-col{
     width: 33.33%;
     height: 100%;
-    padding: 25px;
+    padding: 20px;
+    background-color: #5FA9FF;
     text-align: center;
     float: left;
-}
-.port-col img{
-    width: 150px;
-    height: 150px;
 }
 /*nosotros*/
 .nos-fila{
@@ -81,11 +181,15 @@ header, section{
 .nos-col-ext{
     width: 40%;
     height: 100%;
+    /*background-color: #5FA9FF;*/
     float: left;
 }
 .nos-col-cnt{
     width: 20%;
     height: 100%;
+    /*background-color: #fff;*/
+    padding: 25px;
+    text-align: center;
     float: left;
 }
 /*contactenos*/
@@ -103,12 +207,19 @@ header, section{
     height: 30%;
 }
 
-/*pie de pagina*/
+/* Pie de Página */
 footer{
     width: 100%;
     height: 70px;
 }
+
 /* ------------------------------------------------------------------------------------- */
 /* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
 /* -------------------------------------- TABLETS -------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------- IV. RESPONSIVE DESIGN ------------------------------- */
+/* ------------------------------------- CELULARES ------------------------------------- */
 /* ------------------------------------------------------------------------------------- */
