@@ -17,19 +17,19 @@ body{
 }
 /*borde*/
 .borde{
-    border: 1px solid #000;
+    border: 1px solid #5FA9FF;
 }
 /* Fondo color Negro */
 .color-negro{
-    background: #000;
+    background: #0D59B2;
 }
 /* Fondo color gris oscuro */
 .color-gris-oscuro{
-    background: #777777;
+    background: #fff;
 }
 /* Fondo color gris claro */
 .color-gris-claro{
-    background: #AAAAAA;
+    background: #5FA9FF;
 }
 /* Fondo color blanco */
 .color-blanco{
@@ -181,13 +181,13 @@ section img{
 .nos-col-ext{
     width: 40%;
     height: 100%;
-    /*background-color: #5FA9FF;*/
+    background-color: #5FA9FF;
     float: left;
 }
 .nos-col-cnt{
     width: 20%;
     height: 100%;
-    /*background-color: #fff;*/
+    background-color: #0D59B2;
     padding: 25px;
     text-align: center;
     float: left;
@@ -196,15 +196,18 @@ section img{
 .cont-col{
     width: 50%;
     height: 100%;
+    background-color: #0D59B2;
     float: left;
 }
 .cont-fila-arr{
     width: 100%;
     height: 70%;
+    background-color: #FFF;
 }
 .cont-fila-abj{
     width: 100%;
     height: 30%;
+    background-color: #5FA9FF;
 }
 
 /* Pie de Página */
