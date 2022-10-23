@@ -49,12 +49,13 @@ body{
 /* ------------------------------------------------------------------------------------- */
 /*titulo*/
 .titulo{
-    height: 50px;
+    height: 70px;
     background-color:#0D59B2  ;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #FFF;
     text-align: center;
     padding: 20px;
+    clear: both;
 }
 /* Subtítulos */
 .subtitulo{
@@ -93,10 +94,17 @@ body{
     border-radius: 0 0 5px 5px;
 }
 .ver a{
-	
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #284D59;
+    padding: 10px;
+    border-radius: 5px;
 }
 .ver a:hover{
-	
+	background: rgba(30, 30, 30, 0.5);
 }
 
 
@@ -113,8 +121,8 @@ body{
 }
 /*navegador*/
 nav{
-    height: 50px;
     width: 100%;
+    height: 50px;
     border-bottom: 2px solid #000;
 }
 /*logo*/
@@ -147,23 +155,15 @@ nav{
     float: left;
 }
 /* encabezado y secciones*/
-header, section{
-    height: 600px;
-    min-height: 600px;
-}
 header{
+    height: 90vh;
     background-image: url(../img/sena.jpg);
     background-size: 100%;
     background-attachment: fixed;
 }
-section img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
 /*portafolio*/
 .portafolio{
-    min-height: 600px;
+    height: auto;
 }
 .port-col{
     width: 33.33%;
@@ -173,7 +173,13 @@ section img{
     text-align: center;
     float: left;
 }
+.portafolio img{
+       width: 200px;
+}
 /*nosotros*/
+.nosotros{
+    height: 90vh;
+}
 .nos-fila{
     width: 100%;
     height: 33.33%;
@@ -181,18 +187,24 @@ section img{
 .nos-col-ext{
     width: 40%;
     height: 100%;
-    background-color: #5FA9FF;
+    background-color: #fff;
     float: left;
 }
 .nos-col-cnt{
     width: 20%;
-    height: 100%;
+    height: 90%;
     background-color: #0D59B2;
-    padding: 25px;
+    padding: 10px;
     text-align: center;
     float: left;
 }
+.nosotros img{
+    border-radius: 50%;
+}
 /*contactenos*/
+.contactenos{
+    height: 90vh;
+}
 .cont-col{
     width: 50%;
     height: 100%;
