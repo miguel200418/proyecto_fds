@@ -17,7 +17,7 @@ body{
 }
 /*borde*/
 .borde{
-    border: 1px solid #5FA9FF;
+    border: 1px solid #8B949E;
 }
 /* Fondo color Negro */
 .color-negro{
@@ -25,18 +25,15 @@ body{
 }
 /* Fondo color gris oscuro */
 .color-gris-oscuro{
-    background: #fff;
+    background: #4C4C4C;
 }
 /* Fondo color gris claro */
 .color-gris-claro{
-    background: #5FA9FF;
+    background: #8B949E;
 }
 /* Fondo color blanco */
 .color-blanco{
     background: #FFF;
-}
-.clear{
-    clear: both;
 }
 /* ------------------------------------------------------------------------------------- */
 /* FUENTES: ROBOTO Y YANONE ------------------------------------------------------------ */
@@ -107,6 +104,30 @@ body{
 	background: rgba(30, 30, 30, 0.5);
 }
 
+/* ------------------------------------------------------------------------------------- */
+/* UBICACIÓN ESPACIO TEMPORAL ---------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+.espacio-temporal{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    border-bottom: 1px solid #CCC;
+}
+/* ------------------------------------------------------------------------------------- */
+/* SOCIAL MEDIA ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------- */
+.social-media{
+    padding: 10px;
+    text-align: center;
+}
+.social-media a{
+    color: #000;
+    font-size: 3em;
+    padding: 0 5px 0 5px;
+}
+.social-media a:hover{
+    color: #FFF;
+}
 
 /* ------------------------------------------------------------------------------------- */
 /* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
@@ -136,9 +157,7 @@ nav{
 }
 .logo img{
     width: 100%;
-    height: 100%;
-    
-    
+    height: 100%;    
 }
 /*menu*/
 .menu{
@@ -169,7 +188,7 @@ header{
     width: 33.33%;
     height: 100%;
     padding: 20px;
-    background-color: #8B949E;
+    /*background-color: #8B949E;*/
     text-align: center;
     float: left;
 }
@@ -178,6 +197,7 @@ header{
 }
 /*nosotros*/
 .nosotros{
+    width: 100%;
     height: 90vh;
 }
 .nos-fila{
@@ -187,19 +207,33 @@ header{
 .nos-col-ext{
     width: 40%;
     height: 100%;
-    background-color: #8B949E;
+    /*background-color: #8B949E;*/
     float: left;
 }
 .nos-col-cnt{
     width: 20%;
     height: 100%;
-    background-color: #4C4C4C;
+    /*background-color: #4C4C4C;*/
     padding: 10px;
     text-align: center;
     float: left;
 }
 .nosotros img{
     border-radius: 50%;
+}
+.nosotros .nos-col-ext .subtitulo,
+.nosotros .nos-col-ext .parrafo{
+    text-align: right;
+}
+.nosotros .nos-col-izq a{
+    margin-right: 0;
+}
+.nosotros .nos-col-cnt .subtitulo,
+.nosotros .nos-col-cnt .parrafo{
+    text-align: left;
+}
+.nosotros .nos-col-cnt a{
+    margin-left: 0;
 }
 /*contactenos*/
 .contactenos{
@@ -208,18 +242,24 @@ header{
 .cont-col{
     width: 50%;
     height: 100%;
-    background-color: #4C4C4C;
+    /*background-color: #4C4C4C;*/
     float: left;
 }
 .cont-fila-arr{
     width: 100%;
     height: 70%;
-    background-color: #fff;
+    /*background-color: #fff;*/
+}
+.cont-fila-arr iframe{
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 .cont-fila-abj{
     width: 100%;
     height: 30%;
-    background-color: #8B949E;
+    /*background-color: #8B949E;*/
+    padding: 10px;
 }
 
 /* Pie de Página */
