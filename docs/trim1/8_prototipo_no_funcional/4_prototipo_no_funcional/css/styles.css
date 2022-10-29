@@ -21,7 +21,7 @@ body{
 }
 /* Fondo color Negro */
 .color-negro{
-    background: #0D59B2;
+    background: #0D1117;
 }
 /* Fondo color gris oscuro */
 .color-gris-oscuro{
@@ -50,7 +50,7 @@ body{
 /*titulo*/
 .titulo{
     height: 70px;
-    background-color:#0D59B2  ;
+    background-color:#0D1117  ;
     font-family: 'Yanone Kaffeesatz', sans-serif;
     color: #FFF;
     text-align: center;
@@ -144,14 +144,14 @@ nav{
 .menu{
     width: 65%;
     height: 100%;
-    background-color: #5FA9FF ;
+    background-color: #8B949E ;
     float: left;
 }
 /*ingreso*/
 .ingreso{
     width: 15%;
     height: 100%;
-    background-color: #0D59B2;
+    background-color: #4C4C4C;
     float: left;
 }
 /* encabezado y secciones*/
@@ -169,7 +169,7 @@ header{
     width: 33.33%;
     height: 100%;
     padding: 20px;
-    background-color: #5FA9FF;
+    background-color: #8B949E;
     text-align: center;
     float: left;
 }
@@ -187,13 +187,13 @@ header{
 .nos-col-ext{
     width: 40%;
     height: 100%;
-    background-color: #fff;
+    background-color: #8B949E;
     float: left;
 }
 .nos-col-cnt{
     width: 20%;
-    height: 90%;
-    background-color: #0D59B2;
+    height: 100%;
+    background-color: #4C4C4C;
     padding: 10px;
     text-align: center;
     float: left;
@@ -208,18 +208,18 @@ header{
 .cont-col{
     width: 50%;
     height: 100%;
-    background-color: #0D59B2;
+    background-color: #4C4C4C;
     float: left;
 }
 .cont-fila-arr{
     width: 100%;
     height: 70%;
-    background-color: #FFF;
+    background-color: #fff;
 }
 .cont-fila-abj{
     width: 100%;
     height: 30%;
-    background-color: #5FA9FF;
+    background-color: #8B949E;
 }
 
 /* Pie de Página */
