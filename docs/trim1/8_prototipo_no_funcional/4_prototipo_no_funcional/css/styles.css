@@ -1,278 +1,309 @@
-/* ------------------------------------------------------------------------------------- */
-/* -------------------------- I. GENERALIDADES DEL CONTENIDO --------------------------- */
-/* ------------------------------------------------------------------------------------- */
+    /* ------------------------------------------------------------------------------------- */
+    /* -------------------------- I. GENERALIDADES DEL CONTENIDO --------------------------- */
+    /* ------------------------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------------------------- */
-/* CLASES ESPECIALES ------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-/* Selector Universal */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-/*cuerpo*/
-body{
-    background-color: #fff;
-}
-/*borde*/
-.borde{
-    border: 1px solid #8B949E;
-}
-/* Fondo color Negro */
-.color-negro{
-    background: #0D1117;
-}
-/* Fondo color gris oscuro */
-.color-gris-oscuro{
-    background: #4C4C4C;
-}
-/* Fondo color gris claro */
-.color-gris-claro{
-    background: #8B949E;
-}
-/* Fondo color blanco */
-.color-blanco{
-    background: #FFF;
-}
-/* ------------------------------------------------------------------------------------- */
-/* FUENTES: ROBOTO Y YANONE ------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+    /* ------------------------------------------------------------------------------------- */
+    /* CLASES ESPECIALES ------------------------------------------------------------------- */
+    /* ------------------------------------------------------------------------------------- */
+    /* Selector Universal */
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    /*cuerpo*/
+    body{
+        background-color: #fff;
+    }
+    /*borde*/
+    .borde{
+        border: 1px solid #8B949E;
+    }
+    /* Fondo color Negro */
+    .color-negro{
+        background: #0D1117;
+    }
+    /* Fondo color gris oscuro */
+    .color-gris-oscuro{
+        background: #4C4C4C;
+    }
+    /* Fondo color gris claro */
+    .color-gris-claro{
+        background: #8B949E;
+    }
+    /* Fondo color blanco */
+    .color-blanco{
+        background: #FFF;
+    }
+    /* ------------------------------------------------------------------------------------- */
+    /* FUENTES: ROBOTO Y YANONE ------------------------------------------------------------ */
+    /* ------------------------------------------------------------------------------------- */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 
-/* ------------------------------------------------------------------------------------- */
-/* TEXTO: TÍTULOS, SUBTÍTULOS Y PÁRRAFOS ----------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-/*titulo*/
-.titulo{
-    height: 70px;
-    background-color:#0D1117  ;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    color: #FFF;
-    text-align: center;
-    padding: 20px;
-    clear: both;
-}
-/* Subtítulos */
-.subtitulo{
-    font-family: 'Roboto', sans-serif;
-    background: #CCC;
-    text-align: center;
-    padding: 10px;
-    border-radius: 5px 5px 0 0;
-}
-/* Párrafos */
-.parrafo{
-    font-family: 'Roboto', sans-serif;
-    text-align: justify;
-    padding: 10px;
-}
+    /* ------------------------------------------------------------------------------------- */
+    /* TEXTO: TÍTULOS, SUBTÍTULOS Y PÁRRAFOS ----------------------------------------------- */
+    /* ------------------------------------------------------------------------------------- */
+    /*titulo*/
+    .titulo{
+        height: 70px;
+        background-color:#0D1117  ;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        color: #FFF;
+        text-align: center;
+        padding: 20px;
+        clear: both;
+    }
+    /* Subtítulos */
+    .subtitulo{
+        font-family: 'Roboto', sans-serif;
+        background: #CCC;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+    }
+    /* Párrafos */
+    .parrafo{
+        font-family: 'Roboto', sans-serif;
+        text-align: justify;
+        padding: 10px;
+    }
 
-/* ------------------------------------------------------------------------------------- */
-/* IMÁGENES ---------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-.imagen{
-	text-align: center;
-    padding: 10px;
-}
-.imagen img{	
-	width: 150px;
-    height: auto;	
-}
-/* ------------------------------------------------------------------------------------- */
-/* BOTONES DE ENLACE ------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-.ver{
-	font-family: 'Yanone Kaffeesatz', sans-serif;
-    background: #CCC;
-    text-align: center;
-    padding: 10px;
-    border-radius: 0 0 5px 5px;
-}
-.ver a{
-    display: block;
-    width: 50%;
-    margin: auto;
-    text-decoration: none;
-    color: #FFF;
-    background-color: #284D59;
-    padding: 10px;
-    border-radius: 5px;
-}
-.ver a:hover{
-	background: rgba(30, 30, 30, 0.5);
-}
+    /* ------------------------------------------------------------------------------------- */
+    /* IMÁGENES ---------------------------------------------------------------------------- */
+    /* ------------------------------------------------------------------------------------- */
+    .imagen{
+        text-align: center;
+        padding: 10px;
+    }
+    .imagen img{	
+        width: 150px;
+        height: auto;	
+    }
+    /* ------------------------------------------------------------------------------------- */
+    /* BOTONES DE ENLACE ------------------------------------------------------------------- */
+    /* ------------------------------------------------------------------------------------- */
+    .ver{
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+        background: #CCC;
+        text-align: center;
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+    }
+    .ver a{
+        display: block;
+        width: 50%;
+        margin: auto;
+        text-decoration: none;
+        color: #FFF;
+        background-color: #284D59;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .ver a:hover{
+        background: rgba(30, 30, 30, 0.5);
+    }
 
-/* ------------------------------------------------------------------------------------- */
-/* UBICACIÓN ESPACIO TEMPORAL ---------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-.espacio-temporal{
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
-    text-align: center;
-    border-bottom: 1px solid #CCC;
-}
-/* ------------------------------------------------------------------------------------- */
-/* SOCIAL MEDIA ------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------- */
-.social-media{
-    padding: 10px;
-    text-align: center;
-}
-.social-media a{
-    color: #000;
-    font-size: 3em;
-    padding: 0 5px 0 5px;
-}
-.social-media a:hover{
-    color: #FFF;
-}
+    /* ------------------------------------------------------------------------------------- */
+    /* UBICACIÓN ESPACIO TEMPORAL ---------------------------------------------------------- */
+    /* ------------------------------------------------------------------------------------- */
+    .espacio-temporal{
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.8em;
+        text-align: center;
+        border-bottom: 1px solid #CCC;
+    }
+    /* ------------------------------------------------------------------------------------- */
+    /* SOCIAL MEDIA ------------------------------------------------------------------------ */
+    /* ------------------------------------------------------------------------------------- */
+    .social-media{
+        padding: 10px;
+        text-align: center;
+    }
+    .social-media a{
+        color: #000;
+        font-size: 3em;
+        padding: 0 5px 0 5px;
+    }
+    .social-media a:hover{
+        color: #FFF;
+    }
 
-/* ------------------------------------------------------------------------------------- */
-/* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
-/* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-/*contenedor*/
-.contenedor{
-    width: 95%;
-    max-width: 1200px;
-    margin: auto;
-    border-top: 0;
-}
-/*navegador*/
-nav{
-    width: 100%;
-    height: 50px;
-    border-bottom: 2px solid #000;
-}
-/*logo*/
-.logo{
-    width: 20%;
-    height: 100%;
-    /*/background-color: #0D59B2 ;*/
-    float: left;
-    /*text-align: center;*/
-    /*padding: 10px;*/
-}
-.logo img{
-    width: 100%;
-    height: 100%;    
-}
-/*menu*/
-.menu{
-    width: 65%;
-    height: 100%;
-    background-color: #8B949E ;
-    float: left;
-}
-/*ingreso*/
-.ingreso{
-    width: 15%;
-    height: 100%;
-    background-color: #4C4C4C;
-    float: left;
-}
-/* encabezado y secciones*/
-header{
-    height: 90vh;
-    background-image: url(../img/sena.jpg);
-    background-size: 100%;
-    background-attachment: fixed;
-}
-/*portafolio*/
-.portafolio{
-    height: auto;
-}
-.port-col{
-    width: 33.33%;
-    height: 100%;
-    padding: 20px;
-    /*background-color: #8B949E;*/
-    text-align: center;
-    float: left;
-}
-.portafolio img{
-       width: 200px;
-}
-/*nosotros*/
-.nosotros{
-    width: 100%;
-    height: 90vh;
-}
-.nos-fila{
-    width: 100%;
-    height: 33.33%;
-}
-.nos-col-ext{
-    width: 40%;
-    height: 100%;
-    /*background-color: #8B949E;*/
-    float: left;
-}
-.nos-col-cnt{
-    width: 20%;
-    height: 100%;
-    /*background-color: #4C4C4C;*/
-    padding: 10px;
-    text-align: center;
-    float: left;
-}
-.nosotros img{
-    border-radius: 50%;
-}
-.nosotros .nos-col-ext .subtitulo,
-.nosotros .nos-col-ext .parrafo{
-    text-align: right;
-}
-.nosotros .nos-col-izq a{
-    margin-right: 0;
-}
-.nosotros .nos-col-cnt .subtitulo,
-.nosotros .nos-col-cnt .parrafo{
-    text-align: left;
-}
-.nosotros .nos-col-cnt a{
-    margin-left: 0;
-}
-/*contactenos*/
-.contactenos{
-    height: 90vh;
-}
-.cont-col{
-    width: 50%;
-    height: 100%;
-    /*background-color: #4C4C4C;*/
-    float: left;
-}
-.cont-fila-arr{
-    width: 100%;
-    height: 70%;
-    /*background-color: #fff;*/
-}
-.cont-fila-arr iframe{
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-.cont-fila-abj{
-    width: 100%;
-    height: 30%;
-    /*background-color: #8B949E;*/
-    padding: 10px;
-}
+    /* ------------------------------------------------------------------------------------- */
+    /* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
+    /* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
+    /* ------------------------------------------------------------------------------------- */
+    /*contenedor*/
+    .contenedor{
+        width: 95%;
+        max-width: 1200px;
+        margin: auto;
+        border-top: 0;
+    }
+    /*navegador*/
+    nav{
+        width: 100%;
+        height: 50px;
+        border-bottom: 2px solid #000;
+    }
+    /*logo*/
+    .logo{
+        width: 20%;
+        height: 100%;
+        /*/background-color: #0D59B2 ;*/
+        float: left;
+        /*text-align: center;*/
+        /*padding: 10px;*/
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;    
+    }
+    /*menu*/
+    .menu{
+        width: 65%;
+        height: 100%;
+        background-color: #8B949E ;
+        float: left;
+    }
+    /*ingreso*/
+    .ingreso{
+        width: 15%;
+        height: 100%;
+        background-color: #4C4C4C;
+        float: left;
+    }
+    /* encabezado y secciones*/
+    header{
+        height: 90vh;
+        background-image: url(../img/sena.jpg);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    /*portafolio*/
+    .portafolio{
+        height: auto;
+    }
+    .port-col{
+        width: 33.33%;
+        height: 100%;
+        padding: 20px;
+        /*background-color: #8B949E;*/
+        text-align: center;
+        float: left;
+    }
+    .portafolio img{
+        width: 200px;
+    }
+    /*nosotros*/
+    .nosotros{
+        width: 100%;
+        height: 90vh;
+    }
+    .nos-fila{
+        width: 100%;
+        height: 33.33%;
+    }
+    .nos-col-ext{
+        width: 40%;
+        height: 100%;
+        /*background-color: #8B949E;*/
+        float: left;
+    }
+    .nos-col-cnt{
+        width: 20%;
+        height: 100%;
+        /*background-color: #4C4C4C;*/
+        padding: 10px;
+        text-align: center;
+        float: left;
+    }
+    .nosotros img{
+        border-radius: 50%;
+    }
+    .nosotros .nos-col-ext .subtitulo,
+    .nosotros .nos-col-ext .parrafo{
+        text-align: right;
+    }
+    .nosotros .nos-col-izq a{
+        margin-right: 0;
+    }
+    .nosotros .nos-col-cnt .subtitulo,
+    .nosotros .nos-col-cnt .parrafo{
+        text-align: left;
+    }
+    .nosotros .nos-col-cnt a{
+        margin-left: 0;
+    }
+    /*contactenos*/
+    .contactenos{
+        height: 90vh;
+    }
+    .cont-col{
+        width: 50%;
+        height: 100%;
+        /*background-color: #4C4C4C;*/
+        float: left;
+    }
+    .cont-fila-arr{
+        width: 100%;
+        height: 70%;
+        /*background-color: #fff;*/
+    }
+    .cont-fila-arr iframe{
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+    .cont-fila-abj{
+        width: 100%;
+        height: 30%;
+        /*background-color: #8B949E;*/
+        padding: 10px;
+    }
 
-/* Pie de Página */
-footer{
-    width: 100%;
-    height: 70px;
-}
+    /* Pie de Página */
+    footer{
+        width: 100%;
+        height: 70px;
+        padding: 10px; 
+    }
+    footer .parrafo{       
+        text-align: center;
+        color:#FFF;
+        font-size: 0.7em;    
+    }
 
-/* ------------------------------------------------------------------------------------- */
-/* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
-/* -------------------------------------- TABLETS -------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-
+    /* ------------------------------------------------------------------------------------- */
+    /* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
+    /* -------------------------------------- TABLETS -------------------------------------- */
+    /* ------------------------------------------------------------------------------------- */
+    /* Tablet: Media Queries */
+    @media (max-width: 992px) {
+        /* Contenedor */
+        .contenedor{
+            width: 100%;        
+        }
+        /*navegador*/
+    nav{
+        height: 150px;
+    }
+    /*logo*/
+    .logo{
+        width: 100%;
+        height: 66.66px;
+    }
+    /*menu*/
+    .menu{
+        width: 80%;
+        height: 33.33px;
+    }
+    /*ingreso*/
+    .ingreso{
+        width: 20%;
+        height: 33.33%;
+    }
+    }
 
 /* ------------------------------------------------------------------------------------- */
 /* ------------------------------- IV. RESPONSIVE DESIGN ------------------------------- */
