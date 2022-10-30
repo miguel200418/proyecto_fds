@@ -1,276 +1,525 @@
-    /* ------------------------------------------------------------------------------------- */
-    /* -------------------------- I. GENERALIDADES DEL CONTENIDO --------------------------- */
-    /* ------------------------------------------------------------------------------------- */
+        /* ------------------------------------------------------------------------------------- */
+        /* -------------------------- I. GENERALIDADES DEL CONTENIDO --------------------------- */
+        /* ------------------------------------------------------------------------------------- */
 
-    
-    /* ------------------------------------------------------------------------------------- */
-    /* CLASES ESPECIALES ------------------------------------------------------------------- */
-    /* ------------------------------------------------------------------------------------- */
-    /* Selector Universal */
-    *{
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    /* Cuerpo */
-    body{
-        /* background: #ddd; */
-    }
-    /* Borde */
-    .borde{
-        border: 1px solid #000;
-    }
-    /* Fondo color Negro */
-    .color-negro{
-        background: #000;
-    }
-    /* Fondo color gris oscuro */
-    .color-gris-oscuro{
-        background: #777777;
-    }
-    /* Fondo color gris claro */
-    .color-gris-claro{
-        background: #AAAAAA;
-    }
-    /* Fondo color blanco */
-    .color-blanco{
-        background: #FFF;
-    }
-    
-    /* ------------------------------------------------------------------------------------- */
-    /* FUENTES: ROBOTO Y YANONE ------------------------------------------------------------ */
-    /* ------------------------------------------------------------------------------------- */
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+        /* ------------------------------------------------------------------------------------- */
+        /* FUENTES: ROBOTO Y YANONE ------------------------------------------------------------ */
+        /* ------------------------------------------------------------------------------------- */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+        
+        /* ------------------------------------------------------------------------------------- */
+        /* CLASES ESPECIALES ------------------------------------------------------------------- */
+        /* ------------------------------------------------------------------------------------- */
+        /* Selector Universal */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* Cuerpo */
+        body{
+            /* background: #ddd; */
+        }
+        /* Borde */
+        .borde{
+            border: 1px solid #000;
+        }
+        /* Fondo color Negro */
+        .color-negro{
+            background: #000;
+        }
+        /* Fondo color gris oscuro */
+        .color-gris-oscuro{
+            background: #777777;
+        }
+        /* Fondo color gris claro */
+        .color-gris-claro{
+            background: #AAAAAA;
+        }
+        /* Fondo color blanco */
+        .color-blanco{
+            background: #FFF;
+        }
+        /* ------------------------------------------------------------------------------------- */
+        /* TEXTO: TÍTULOS, SUBTÍTULOS Y PÁRRAFOS ----------------------------------------------- */
+        /* ------------------------------------------------------------------------------------- */
+        /*titulo*/
+        .titulo{
+            height: 70px;
+            background: #000;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            color: #fff;
+            text-align: center;
+            align-items: center; 
+            clear: both;
+        }
+        /* Subtítulos */
+        .subtitulo{
+            font-family: 'Roboto', sans-serif;
+            background: #CCC;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+        }
+        /* Párrafos */
+        .parrafo{
+            font-family: 'Roboto', sans-serif;
+            text-align: justify;
+            padding: 10px;
+        }
 
-    /* ------------------------------------------------------------------------------------- */
-    /* TEXTO: TÍTULOS, SUBTÍTULOS Y PÁRRAFOS ----------------------------------------------- */
-    /* ------------------------------------------------------------------------------------- */
-    /*titulo*/
-    .titulo{
-        height: 70px;
-        background: #000;
-        font-family: 'Yanone Kaffeesatz', sans-serif;
-        color: #fff;
-        text-align: center;
-        align-items: center; 
-        clear: both;
-    }
-    /* Subtítulos */
-    .subtitulo{
-        font-family: 'Roboto', sans-serif;
-        background: #CCC;
-        text-align: center;
+        /* ------------------------------------------------------------------------------------- */
+        /* IMÁGENES ---------------------------------------------------------------------------- */
+        /* ------------------------------------------------------------------------------------- */
+        .imagen{
+            text-align: center;
+            padding: 10px;
+        }
+        .imagen img{	
+            width: 150px;
+            height: auto;
+        }
+        /* ------------------------------------------------------------------------------------- */
+        /* BOTONES DE ENLACE ------------------------------------------------------------------- */
+        /* ------------------------------------------------------------------------------------- */
+        .ver{
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            background: #CCC;
+            text-align: center;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+        }
+        .ver a{
+            display: block;
+        width: 50%;
+        margin: auto;
+        text-decoration: none;
+        color: #EEE;
+        background: #2A5159;
         padding: 10px;
-        border-radius: 5px 5px 0 0;
-    }
-    /* Párrafos */
-    .parrafo{
-        font-family: 'Roboto', sans-serif;
-        text-align: justify;
-        padding: 10px;
-    }
+        border-radius: 5px;
+        }
+        .ver a:hover{
+            background: rgba(30, 30, 30, 0.5);  
+        }
 
-    /* ------------------------------------------------------------------------------------- */
-    /* IMÁGENES ---------------------------------------------------------------------------- */
-    /* ------------------------------------------------------------------------------------- */
-    .imagen{
-        text-align: center;
-        padding: 10px;
-    }
-    .imagen img{	
-        width: 150px;
-        height: auto;
-    }
-    /* ------------------------------------------------------------------------------------- */
-    /* BOTONES DE ENLACE ------------------------------------------------------------------- */
-    /* ------------------------------------------------------------------------------------- */
-    .ver{
-        font-family: 'Yanone Kaffeesatz', sans-serif;
-        background: #CCC;
-        text-align: center;
-        padding: 10px;
-        border-radius: 0 0 5px 5px;
-    }
-    .ver a{
-        display: block;
-    width: 50%;
-    margin: auto;
-	text-decoration: none;
-	color: #EEE;
-	background: #2A5159;
-    padding: 10px;
-	border-radius: 5px;
-    }
-    .ver a:hover{
-        background: rgba(30, 30, 30, 0.5);  
-    }
+        /* ------------------------------------------------------------------------------------- */
+        /* UBICACIÓN ESPACIO TEMPORAL ---------------------------------------------------------- */
+        /* ------------------------------------------------------------------------------------- */
+        .espacio-temporal{
+            height: 60%;
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.8em;
+            text-align: center;
+            border-bottom: 1px solid #CCC;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        /* ------------------------------------------------------------------------------------- */
+        /* SOCIAL MEDIA ------------------------------------------------------------------------ */
+        /* ------------------------------------------------------------------------------------- */
+        .social-media{
+            flex: 1; 
+            text-align: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            align-content: center;
+            }
+        .social-media a{
+            flex: 1;
+            color: #000;
+            font-size: 3em;
+            /*padding: 0 5px 0 5px;*/
+        }
+        .social-media a:hover{
+            color: #FFF;
+        }
 
-    /* ------------------------------------------------------------------------------------- */
-    /* UBICACIÓN ESPACIO TEMPORAL ---------------------------------------------------------- */
-    /* ------------------------------------------------------------------------------------- */
-    .espacio-temporal{
-        font-family: 'Roboto', sans-serif;
-        font-size: 0.8em;
-        text-align: center;
-        border-bottom: 1px solid #CCC;
-    }
-    /* ------------------------------------------------------------------------------------- */
-    /* SOCIAL MEDIA ------------------------------------------------------------------------ */
-    /* ------------------------------------------------------------------------------------- */
-    .social-media{
-        padding: 10px;
-    text-align: center;
-    }
-    .social-media a{
-        color: #000;
-        font-size: 3em;
-        padding: 0 5px 0 5px;
-    }
-    .social-media a:hover{
-        color: #FFF;
-    }
-
-    /* ------------------------------------------------------------------------------------- */
-    /* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
-    /* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
-    /* ------------------------------------------------------------------------------------- */
-    /*contenedor*/
-    .contenedor{
-        width: 90%;
-    max-width: 1280px;
-    margin: auto;
-    display: flex;
-    flex-flow: column nowrap;
-    }
-    /* Navegador, Encabezado, Secciones, footer */
-    nav,
-.titulo,
-section,
-footer{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;    
-}
-    /*navegador*/
-    nav{
-        height: 50px;
-    }
-    /*logo*/
-    .logo{
-        flex: 20%;
-    }
-    .logo img{
-        width: 100%;
-        height: 100%;   
-    }
-    /*menu*/
-    .menu{
-        flex: 65%;
-        background: #8B949E;
-    }
-    /*ingreso*/
-    .ingreso{
-        flex: 15%;
-        background: #343A40;
-    }
-    /* encabezado*/
-    header{
-        min-height: 83.5vh;
-        background-image: url(../img/sena.jpg);
-        background-size: 100% 100%;
-        background-attachment: fixed;
-    }
-    /*portafolio*/
-    section.portafolio{
-        height: auto;
-    }
-    .port-col-izq, 
-    .port-col-cnt,
-    .port-col-der{
-        padding: 10px;
-    }
-   
-    /*nosotros*/
-    .nosotros{
-       height: auto;
-       min-height: 82.5vh;
-       display: flex;
-       flex-flow: column wrap;
-    }
-    .nos-fila-arr,
-    .nos-fila-cnt,
-    .nos-fila-abj{
-        flex: 1;
+        /* ------------------------------------------------------------------------------------- */
+        /* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
+        /* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
+        /* ------------------------------------------------------------------------------------- */
+        /*contenedor*/
+        .contenedor{
+            width: 90%;
+        max-width: 1280px;
+        margin: auto;
+        display: flex;
+        flex-flow: column nowrap;
+        }
+        /* Navegador, Encabezado, Secciones, footer */
+        nav,
+    .titulo,
+    section,
+    footer{
         display: flex;
         flex-flow: row nowrap;
+        justify-content: center;    
     }
-    .nos-col-izq,
-    .nos-col-der{
-        flex: 40%;
-    }
-    .nos-col-cnt{
-        flex: 20%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .nosotros img{
-       
-    }
-    .nosotros .nos-col-izq .subtitulo,
-    .nosotros .nos-col-izq .parrafo{
- 
-    }
-    .nosotros .nos-col-izq a{
-     
-    }
-    .nosotros .nos-col-der .subtitulo,
-    .nosotros .nos-col-der .parrafo{
-       
-    }
-    .nosotros .nos-col-der a{
-        margin-left: 0;
-    }
-    /*contactenos*/
-    .contactenos{
-     
-    }
-    .cont-col-izq,
-    .cont-col-der{
-        
-    }
-    .cont-col-der .cont-fila-arr{
-     
-    }
-    .cont-fila-arr iframe{
-     
-    }
-    .cont-fila-abj{
+        /*navegador*/
+        nav{
+            height: 50px;
+        }
+        /*logo*/
+        .logo{
+            flex: 20%;
+        }
+        .logo img{
+            width: 100%;
+            height: 100%;   
+        }
+        /*menu*/
+        .menu{
+            flex: 65%;
+            background: #8B949E;
+        }
+        /*ingreso*/
+        .ingreso{
+            flex: 15%;
+            background: #343A40;
+        }
+        /* encabezado*/
+        header{
+            min-height: 83.5vh;
+            background-image: url(../img/sena.jpg);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        /*portafolio*/
+        section.portafolio{
+            height: auto;
+        }
+        .port-col-izq, 
+        .port-col-cnt,
+        .port-col-der{
+            padding: 10px;
+        }
     
-    }
+        /*nosotros*/
+    
+        .nosotros {
+            height: auto;
+            min-height: 82.5vh;
+            display: flex;
+            flex-flow: column wrap;
+        }
+        
+        .nos-fila-arr,
+        .nos-fila-cnt,
+        .nos-fila-abj {
+            flex: 1;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        
+        .nos-col-izq,
+        .nos-col-der {
+            flex: 40%;
+            padding: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+        
+        .nos-col-cnt {
+            flex: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .nosotros .nos-col-izq .subtitulo,
+        .nosotros .nos-col-izq .parrafo {
+            text-align: right;
+        }
+        
+        .nosotros .nos-col-izq a {
+            margin-right: 20px;
+        }
+        
+        .nosotros .nos-col-der .subtitulo,
+        .nosotros .nos-col-der .parrafo {
+            text-align: left;
+        }
+        
+        .nosotros .nos-col-der a {
+            margin-left: 0;
+        }
+        
+        /*contactenos*/
+        .contactenos{
+            height: auto;
+            min-height: 82.5vh;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .cont-col-izq,
+        .cont-col-der{
+            flex: 1;
+        }
+        .cont-col-der{
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        .cont-col-der .cont-fila-arr{
+            height: 65%;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .cont-fila-arr iframe{
+            flex: 1;
+            border: 0;
+        }
+        .cont-fila-abj{
+            flex: 1;
+            height: 35%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
 
-    /* Pie de Página */
-    footer{
-       
-    }
-    footer .parrafo{       
-           
-    }
+        /* Pie de Página */
+        footer{
+            height: auto;
+        }
+        footer .parrafo{       
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            color: #FFF;
+            font-size: 0.7em;
+        }
 
+        /* ------------------------------------------------------------------------------------- */
+        /* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
+        /* -------------------------------------- TABLETS -------------------------------------- */
+        /* ------------------------------------------------------------------------------------- */
+        /* Tablet: Media Queries */
+        @media (max-width: 992px) {
+            /* Contenedor */
+        .contenedor {
+            width: 100%;
+        }
+
+        /* Navegador */
+        nav {
+            height: 150px;
+            flex-flow: row wrap;
+        }
+
+        /* Logo */
+        .logo {
+            flex: auto;
+            width: 100%;
+            height: 100px;
+        }
+
+        /* Menú */
+        .menu {
+            flex: 80%;
+            height: 50px;
+            background: #EF8814;
+        }
+
+        /* Ingreso */
+        .ingreso {
+            flex: 20%;
+            height: 50px;
+        }
+
+        /* Portafolio */
+        .portafolio {
+            height: auto;
+            min-height: 82.5vh;
+            flex-flow: row wrap;
+        }
+
+        .port-col-cnt,
+        .port-col-der {
+            flex: 1;
+        }
+
+        /* Nosotros */
+        .nos-fila-arr,
+        .nos-fila-cnt,
+        .nos-fila-abj {
+            flex: 1;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .nos-fila-arr .nos-col-der,
+        .nos-fila-abj .nos-col-der,
+        .nos-fila-cnt .nos-col-izq{
+            display: none;
+        }
+        
+        .nos-col-izq,
+        .nos-col-der {
+            flex: 40%;
+            padding: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+        
+        .nos-col-cnt {
+            flex: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #FFF;
+        }
+
+        .nosotros .nos-col-izq .subtitulo,
+        .nosotros .nos-col-izq .parrafo {
+            text-align: right;
+        }
+
+        .nosotros .nos-col-izq a {
+            margin-right: 0;
+        }
+
+        .nosotros .nos-col-der .subtitulo,
+        .nosotros .nos-col-der .parrafo {
+            text-align: left;
+        }
+
+        .nosotros .nos-col-der a {
+            margin-left: 0;
+        }
+        .contactenos {
+            height: 82.5vh;
+            min-height: 82.5vh;        
+            flex-flow: column wrap;
+        }    
+        .cont-col-der {
+            display: flex;
+            flex-flow: row wrap;       
+        }
+        .cont-fila-arr {
+            flex: 50%;
+            height: 100%;        
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .cont-fila-abj {
+            flex: 50%;
+            height: auto;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+        }
+            
     /* ------------------------------------------------------------------------------------- */
-    /* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
-    /* -------------------------------------- TABLETS -------------------------------------- */
+    /* ------------------------------- IV. RESPONSIVE DESIGN ------------------------------- */
+    /* ------------------------------------- CELULARES ------------------------------------- */
     /* ------------------------------------------------------------------------------------- */
-    /* Tablet: Media Queries */
-    @media (max-width: 992px) {
-       
+    @media (max-width: 768px) {
+    
+            /* Navegador */
+            nav {
+                flex-flow: column nowrap;
+            }
+    
+            /* Logo */
+            .logo {
+                flex: auto;
+                width: 100%;
+                height: 50px;
+            }
+    
+            /* Menú */
+            .menu {
+                flex: auto;
+                height: 50px;
+                background: #EF8814;
+            }
+    
+            /* Ingreso */
+            .ingreso {
+                flex: 20%;
+                height: 50px;
+            }
 
-/* ------------------------------------------------------------------------------------- */
-/* ------------------------------- IV. RESPONSIVE DESIGN ------------------------------- */
-/* ------------------------------------- CELULARES ------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-@media (max-width: 768px) {  
-
+           /*encabezado*/
+           header{
+            min-height: auto;
+           background-attachment: initial;
+            height: 30vh;
+           }
+            /* Portafolio */    
+            .port-col-cnt,
+            .port-col-der {
+                flex: 100%;
+            }
+    
+            /* Nosotros */
+            .nos-fila-arr .nos-col-der,
+            .nos-fila-abj .nos-col-der,
+            .nos-fila-cnt .nos-col-izq{
+                display: none;
+            }
+            
+            .nos-col-izq,
+            .nos-col-der {
+                flex: 100%;
+                padding: 10px;
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+            }
+            
+            .nos-col-cnt {
+                flex: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #FFF;
+            }
+    
+            .nosotros .nos-col-izq .subtitulo,
+            .nosotros .nos-col-izq .parrafo {
+                text-align: right;
+            }
+    
+            .nosotros .nos-col-izq a {
+                margin-right: 0;
+            }
+    
+            .nosotros .nos-col-der .subtitulo,
+            .nosotros .nos-col-der .parrafo {
+                text-align: left;
+            }
+    
+            .nosotros .nos-col-der a {
+                margin-left: 0;
+            }
+            .contactenos {
+                height: 82.5vh;
+                min-height: 82.5vh;        
+                flex-flow: column wrap;
+            }    
+            .cont-col-der {
+                display: flex;
+                flex-flow: row wrap;       
+            }
+            .cont-fila-arr {
+                flex: 50%;
+                height: 100%;        
+                display: flex;
+                flex-flow: row wrap;
+            }
+            .cont-fila-abj {
+                flex: 50%;
+                height: auto;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+            }
     }
-}
