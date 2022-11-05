@@ -1,525 +1,552 @@
-        /* ------------------------------------------------------------------------------------- */
-        /* -------------------------- I. GENERALIDADES DEL CONTENIDO --------------------------- */
-        /* ------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* -------------------------- I. GENERALIDADES DEL CONTENIDO --------------------------- */
+/* ------------------------------------------------------------------------------------- */
 
-        /* ------------------------------------------------------------------------------------- */
-        /* FUENTES: ROBOTO Y YANONE ------------------------------------------------------------ */
-        /* ------------------------------------------------------------------------------------- */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
-        
-        /* ------------------------------------------------------------------------------------- */
-        /* CLASES ESPECIALES ------------------------------------------------------------------- */
-        /* ------------------------------------------------------------------------------------- */
-        /* Selector Universal */
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        /* Cuerpo */
-        body{
-            /* background: #ddd; */
-        }
-        /* Borde */
-        .borde{
-            border: 1px solid #000;
-        }
-        /* Fondo color Negro */
-        .color-negro{
-            background: #000;
-        }
-        /* Fondo color gris oscuro */
-        .color-gris-oscuro{
-            background: #777777;
-        }
-        /* Fondo color gris claro */
-        .color-gris-claro{
-            background: #AAAAAA;
-        }
-        /* Fondo color blanco */
-        .color-blanco{
-            background: #FFF;
-        }
-        /* ------------------------------------------------------------------------------------- */
-        /* TEXTO: TÍTULOS, SUBTÍTULOS Y PÁRRAFOS ----------------------------------------------- */
-        /* ------------------------------------------------------------------------------------- */
-        /*titulo*/
-        .titulo{
-            height: 70px;
-            background: #000;
-            font-family: 'Yanone Kaffeesatz', sans-serif;
-            color: #fff;
-            text-align: center;
-            align-items: center; 
-            clear: both;
-        }
-        /* Subtítulos */
-        .subtitulo{
-            font-family: 'Roboto', sans-serif;
-            background: #CCC;
-            text-align: center;
-            padding: 10px;
-            border-radius: 5px 5px 0 0;
-        }
-        /* Párrafos */
-        .parrafo{
-            font-family: 'Roboto', sans-serif;
-            text-align: justify;
-            padding: 10px;
-        }
+/* ------------------------------------------------------------------------------------- */
+/* FUENTES: ROBOTO Y YANONE ------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 
-        /* ------------------------------------------------------------------------------------- */
-        /* IMÁGENES ---------------------------------------------------------------------------- */
-        /* ------------------------------------------------------------------------------------- */
-        .imagen{
-            text-align: center;
-            padding: 10px;
-        }
-        .imagen img{	
-            width: 150px;
-            height: auto;
-        }
-        /* ------------------------------------------------------------------------------------- */
-        /* BOTONES DE ENLACE ------------------------------------------------------------------- */
-        /* ------------------------------------------------------------------------------------- */
-        .ver{
-            font-family: 'Yanone Kaffeesatz', sans-serif;
-            background: #CCC;
-            text-align: center;
-            padding: 10px;
-            border-radius: 0 0 5px 5px;
-        }
-        .ver a{
-            display: block;
-        width: 50%;
-        margin: auto;
-        text-decoration: none;
-        color: #EEE;
-        background: #2A5159;
-        padding: 10px;
-        border-radius: 5px;
-        }
-        .ver a:hover{
-            background: rgba(30, 30, 30, 0.5);  
-        }
+/* ------------------------------------------------------------------------------------- */
+/* CLASES ESPECIALES ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* Selector Universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-        /* ------------------------------------------------------------------------------------- */
-        /* UBICACIÓN ESPACIO TEMPORAL ---------------------------------------------------------- */
-        /* ------------------------------------------------------------------------------------- */
-        .espacio-temporal{
-            height: 60%;
-            font-family: 'Roboto', sans-serif;
-            font-size: 0.8em;
-            text-align: center;
-            border-bottom: 1px solid #CCC;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-        }
-        /* ------------------------------------------------------------------------------------- */
-        /* SOCIAL MEDIA ------------------------------------------------------------------------ */
-        /* ------------------------------------------------------------------------------------- */
-        .social-media{
-            flex: 1; 
-            text-align: center;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            align-items: center;
-            align-content: center;
-            }
-        .social-media a{
-            flex: 1;
-            color: #000;
-            font-size: 3em;
-            /*padding: 0 5px 0 5px;*/
-        }
-        .social-media a:hover{
-            color: #FFF;
-        }
+/* Cuerpo */
+body {
+  background: #ddd;
+}
 
-        /* ------------------------------------------------------------------------------------- */
-        /* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
-        /* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
-        /* ------------------------------------------------------------------------------------- */
-        /*contenedor*/
-        .contenedor{
-            width: 90%;
-        max-width: 1280px;
-        margin: auto;
-        display: flex;
-        flex-flow: column nowrap;
-        }
-        /* Navegador, Encabezado, Secciones, footer */
-        nav,
-    .titulo,
-    section,
-    footer{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;    
-    }
-        /*navegador*/
-        nav{
-            height: 50px;
-        }
-        /*logo*/
-        .logo{
-            flex: 20%;
-        }
-        .logo img{
-            width: 100%;
-            height: 100%;   
-        }
-        /*menu*/
-        .menu{
-            flex: 65%;
-            background: #8B949E;
-        }
-        /*ingreso*/
-        .ingreso{
-            flex: 15%;
-            background: #343A40;
-        }
-        /* encabezado*/
-        header{
-            min-height: 83.5vh;
-            background-image: url(../img/sena.jpg);
-            background-size: 100% 100%;
-            background-attachment: fixed;
-        }
-        /*portafolio*/
-        section.portafolio{
-            height: auto;
-        }
-        .port-col-izq, 
-        .port-col-cnt,
-        .port-col-der{
-            padding: 10px;
-        }
-    
-        /*nosotros*/
-    
-        .nosotros {
-            height: auto;
-            min-height: 82.5vh;
-            display: flex;
-            flex-flow: column wrap;
-        }
-        
-        .nos-fila-arr,
-        .nos-fila-cnt,
-        .nos-fila-abj {
-            flex: 1;
-            display: flex;
-            flex-flow: row nowrap;
-        }
-        
-        .nos-col-izq,
-        .nos-col-der {
-            flex: 40%;
-            padding: 10px;
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-        }
-        
-        .nos-col-cnt {
-            flex: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .nosotros .nos-col-izq .subtitulo,
-        .nosotros .nos-col-izq .parrafo {
-            text-align: right;
-        }
-        
-        .nosotros .nos-col-izq a {
-            margin-right: 20px;
-        }
-        
-        .nosotros .nos-col-der .subtitulo,
-        .nosotros .nos-col-der .parrafo {
-            text-align: left;
-        }
-        
-        .nosotros .nos-col-der a {
-            margin-left: 0;
-        }
-        
-        /*contactenos*/
-        .contactenos{
-            height: auto;
-            min-height: 82.5vh;
-            display: flex;
-            flex-flow: row nowrap;
-        }
-        .cont-col-izq,
-        .cont-col-der{
-            flex: 1;
-        }
-        .cont-col-der{
-            display: flex;
-            flex-flow: column nowrap;
-        }
-        .cont-col-der .cont-fila-arr{
-            height: 65%;
-            display: flex;
-            flex-flow: row nowrap;
-        }
-        .cont-fila-arr iframe{
-            flex: 1;
-            border: 0;
-        }
-        .cont-fila-abj{
-            flex: 1;
-            height: 35%;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-        }
+/* Borde */
+.borde {
+  border: 1px solid #ccc;
+}
 
-        /* Pie de Página */
-        footer{
-            height: auto;
-        }
-        footer .parrafo{       
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-            align-items: center;
-            color: #FFF;
-            font-size: 0.7em;
-        }
+/* Fondo color Negro */
+.color-negro {
+  background: #000;
+}
 
-        /* ------------------------------------------------------------------------------------- */
-        /* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
-        /* -------------------------------------- TABLETS -------------------------------------- */
-        /* ------------------------------------------------------------------------------------- */
-        /* Tablet: Media Queries */
-        @media (max-width: 992px) {
-            /* Contenedor */
-        .contenedor {
-            width: 100%;
-        }
+/* Fondo color gris oscuro */
+.color-gris-oscuro {
+  background: #777777;
+}
 
-        /* Navegador */
-        nav {
-            height: 150px;
-            flex-flow: row wrap;
-        }
+/* Fondo color gris claro */
+.color-gris-claro {
+  background: #aaaaaa;
+}
 
-        /* Logo */
-        .logo {
-            flex: auto;
-            width: 100%;
-            height: 100px;
-        }
+/* Fondo color blanco */
+.color-blanco {
+  background: #fff;
+}
 
-        /* Menú */
-        .menu {
-            flex: 80%;
-            height: 50px;
-            background: #EF8814;
-        }
+/* ------------------------------------------------------------------------------------- */
+/* TEXTO: TÍTULOS, SUBTÍTULOS Y PÁRRAFOS ----------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* Títulos */
+.titulo {
+  height: 70px;
+  background: #343a40;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  clear: both;
+}
 
-        /* Ingreso */
-        .ingreso {
-            flex: 20%;
-            height: 50px;
-        }
+/* Subtítulos */
+.subtitulo {
+  font-family: 'Roboto', sans-serif;
+  background: #ccc;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
 
-        /* Portafolio */
-        .portafolio {
-            height: auto;
-            min-height: 82.5vh;
-            flex-flow: row wrap;
-        }
+/* Párrafos */
+.parrafo {
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+  padding: 10px;
+}
 
-        .port-col-cnt,
-        .port-col-der {
-            flex: 1;
-        }
+/* ------------------------------------------------------------------------------------- */
+/* IMÁGENES ---------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+.imagen {
+  text-align: center;
+  padding: 10px;
+}
 
-        /* Nosotros */
-        .nos-fila-arr,
-        .nos-fila-cnt,
-        .nos-fila-abj {
-            flex: 1;
-            display: flex;
-            flex-flow: row nowrap;
-        }
-        .nos-fila-arr .nos-col-der,
-        .nos-fila-abj .nos-col-der,
-        .nos-fila-cnt .nos-col-izq{
-            display: none;
-        }
-        
-        .nos-col-izq,
-        .nos-col-der {
-            flex: 40%;
-            padding: 10px;
-            display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-        }
-        
-        .nos-col-cnt {
-            flex: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #FFF;
-        }
+.imagen img {
+  width: 150px;
+  height: auto;
+}
 
-        .nosotros .nos-col-izq .subtitulo,
-        .nosotros .nos-col-izq .parrafo {
-            text-align: right;
-        }
+/* ------------------------------------------------------------------------------------- */
+/* BOTONES DE ENLACE ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+.ver {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background: #ccc;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+}
 
-        .nosotros .nos-col-izq a {
-            margin-right: 0;
-        }
+.ver a {
+  display: block;  
+  margin: auto;
+  text-decoration: none;
+  color: #eee;
+  background: #2a5159;
+  padding: 10px;
+  border-radius: 5px;
+}
 
-        .nosotros .nos-col-der .subtitulo,
-        .nosotros .nos-col-der .parrafo {
-            text-align: left;
-        }
+.ver a:hover {
+  background: rgba(30, 30, 30, 0.5);
+}
 
-        .nosotros .nos-col-der a {
-            margin-left: 0;
-        }
-        .contactenos {
-            height: 82.5vh;
-            min-height: 82.5vh;        
-            flex-flow: column wrap;
-        }    
-        .cont-col-der {
-            display: flex;
-            flex-flow: row wrap;       
-        }
-        .cont-fila-arr {
-            flex: 50%;
-            height: 100%;        
-            display: flex;
-            flex-flow: row wrap;
-        }
-        .cont-fila-abj {
-            flex: 50%;
-            height: auto;
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: center;
-        }
-        }
-            
-    /* ------------------------------------------------------------------------------------- */
-    /* ------------------------------- IV. RESPONSIVE DESIGN ------------------------------- */
-    /* ------------------------------------- CELULARES ------------------------------------- */
-    /* ------------------------------------------------------------------------------------- */
-    @media (max-width: 768px) {
-    
-            /* Navegador */
-            nav {
-                flex-flow: column nowrap;
-            }
-    
-            /* Logo */
-            .logo {
-                flex: auto;
-                width: 100%;
-                height: 50px;
-            }
-    
-            /* Menú */
-            .menu {
-                flex: auto;
-                height: 50px;
-                background: #EF8814;
-            }
-    
-            /* Ingreso */
-            .ingreso {
-                flex: 20%;
-                height: 50px;
-            }
+/* ------------------------------------------------------------------------------------- */
+/* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
+/* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* Contenedor */
+.contenedor {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+}
 
-           /*encabezado*/
-           header{
-            min-height: auto;
-           background-attachment: initial;
-            height: 30vh;
-           }
-            /* Portafolio */    
-            .port-col-cnt,
-            .port-col-der {
-                flex: 100%;
-            }
-    
-            /* Nosotros */
-            .nos-fila-arr .nos-col-der,
-            .nos-fila-abj .nos-col-der,
-            .nos-fila-cnt .nos-col-izq{
-                display: none;
-            }
-            
-            .nos-col-izq,
-            .nos-col-der {
-                flex: 100%;
-                padding: 10px;
-                display: flex;
-                flex-flow: row wrap;
-                align-items: center;
-            }
-            
-            .nos-col-cnt {
-                flex: 20%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: #FFF;
-            }
-    
-            .nosotros .nos-col-izq .subtitulo,
-            .nosotros .nos-col-izq .parrafo {
-                text-align: right;
-            }
-    
-            .nosotros .nos-col-izq a {
-                margin-right: 0;
-            }
-    
-            .nosotros .nos-col-der .subtitulo,
-            .nosotros .nos-col-der .parrafo {
-                text-align: left;
-            }
-    
-            .nosotros .nos-col-der a {
-                margin-left: 0;
-            }
-            .contactenos {
-                height: 82.5vh;
-                min-height: 82.5vh;        
-                flex-flow: column wrap;
-            }    
-            .cont-col-der {
-                display: flex;
-                flex-flow: row wrap;       
-            }
-            .cont-fila-arr {
-                flex: 50%;
-                height: 100%;        
-                display: flex;
-                flex-flow: row wrap;
-            }
-            .cont-fila-abj {
-                flex: 50%;
-                height: auto;
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: center;
-            }
-    }
+/* Navegador, Encabezado, Secciones, footer */
+nav,
+.titulo,
+section,
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+/* Navegador */
+nav {
+  height: 50px;
+}
+
+/* Logo */
+.logo {
+  flex: 20%;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Menú */
+.menu {
+  flex: 65%;
+  background: #ef8814;
+}
+
+/* Ingreso */
+.ingreso {
+  flex: 15%;
+}
+
+/* Encabezado */
+header {
+  min-height: 83.5vh;
+  background-image: url(../img/header.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+/* Portafolio */
+.portafolio {
+  height: auto;
+}
+
+.port-col-izq,
+.port-col-cnt,
+.port-col-der {
+  padding: 10px;
+}
+
+/* Nosotros */
+.nosotros {
+  height: auto;
+  min-height: 82.5vh;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.nos-fila-arr,
+.nos-fila-cnt,
+.nos-fila-abj {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.nos-col-izq,
+.nos-col-der {
+  flex: 40%;
+  padding: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.nos-col-cnt {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros .nos-col-izq .subtitulo,
+.nosotros .nos-col-izq .parrafo {
+  text-align: right;
+}
+
+.nosotros .nos-col-izq a {
+  margin-right: 0;
+}
+
+.nosotros .nos-col-der .subtitulo,
+.nosotros .nos-col-der .parrafo {
+  text-align: left;
+}
+
+.nosotros .nos-col-der a {
+  margin-left: 0;
+}
+
+/* Contáctenos */
+.contactenos {
+  min-height: 83.5vh;
+}
+.cont-col-izq,
+.cont-col-der {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+}
+.cont-fila-arr {
+  height: 65%;
+}
+.cont-fila-arr iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.cont-fila-abj {
+  height: 35%;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Ubicación Espacio temporal */
+.cont-fila-abj .espacio-temporal {
+  height: 60%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Social meida */
+.cont-fila-abj .social-media {
+  height: 40%;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.social-media a {
+  flex: 1;
+  color: #000;
+  font-size: 3em;
+}
+
+.social-media a:hover {
+  color: #fff;
+}
+
+/* Pie de Página */
+footer {
+  height: auto;
+}
+footer .parrafo {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.7em;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------ III. RESPONSIVE DESIGN ------------------------------- */
+/* -------------------------------------- TABLETS -------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  /* Contenedor */
+  .contenedor {
+    width: 100%;
+  }
+
+  /* Navegador */
+  nav {
+    height: 150px;
+    flex-flow: row wrap;
+  }
+
+  /* Logo */
+  .logo {
+    flex: auto;
+    width: 100%;
+    height: 100px;
+  }
+
+  /* Menú */
+  .menu {
+    flex: 80%;
+    height: 50px;
+    background: #ef8814;
+  }
+
+  /* Ingreso */
+  .ingreso {
+    flex: 20%;
+    height: 50px;
+  }
+
+  /* Portafolio */
+  .portafolio {
+    height: auto;
+    min-height: 82.5vh;
+    flex-flow: row wrap;
+  }
+
+  .port-col-cnt,
+  .port-col-der {
+    flex: 1;
+  }
+
+  /* Nosotros */
+  .nos-fila-arr,
+  .nos-fila-cnt,
+  .nos-fila-abj {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .nos-fila-arr .nos-col-der,
+  .nos-fila-abj .nos-col-der,
+  .nos-fila-cnt .nos-col-izq {
+    display: none;
+  }
+
+  .nos-col-izq,
+  .nos-col-der {
+    flex: 40%;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .nos-col-cnt {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+
+  .nosotros .nos-col-izq .subtitulo,
+  .nosotros .nos-col-izq .parrafo {
+    text-align: right;
+  }
+
+  .nosotros .nos-col-izq a {
+    margin-right: 0;
+  }
+
+  .nosotros .nos-col-der .subtitulo,
+  .nosotros .nos-col-der .parrafo {
+    text-align: left;
+  }
+
+  .nosotros .nos-col-der a {
+    margin-left: 0;
+  }
+
+  /* Contáctenos */
+  .contactenos {
+    height: 83.5vh;
+    flex-flow: column wrap;
+  }
+  .cont-col-izq,
+  .cont-col-der {    
+    flex-flow: row wrap;
+  }
+  .cont-fila-arr {
+    height: auto;
+    flex: 1;    
+  }  
+  .cont-fila-abj {
+    height: auto;
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  /* Ubicación Espacio temporal */
+  .cont-fila-abj .espacio-temporal {
+    height: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Social meida */
+  .cont-fila-abj .social-media {
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .social-media a {
+    flex: 1;
+    color: #000;
+    font-size: 3em;
+  }
+
+  .social-media a:hover {
+    color: #fff;
+  }
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------- IV. RESPONSIVE DESIGN ------------------------------- */
+/* ------------------------------------- CELULARES ------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Navegador */
+  nav {
+    flex-flow: column nowrap;
+  }
+  /* Logo */
+  .logo {
+    flex: auto;
+    width: 100%;
+    height: 50px;
+  }
+
+  /* Menú */
+  .menu {
+    flex: auto;
+    height: 50px;
+    background: #ef8814;
+  }
+
+  /* Ingreso */
+  .ingreso {
+    flex: auto;
+    height: 50px;
+  }
+  /* Encabezado */
+  header {
+    min-height: auto;
+    background-attachment: initial;
+    height: 30vh;
+  }
+  /* Portafolio */
+  .port-col-cnt,
+  .port-col-der {
+    flex: 100%;
+  }
+
+  /* Nosotros */
+  .nos-fila-arr .nos-col-der,
+  .nos-fila-abj .nos-col-der,
+  .nos-fila-cnt .nos-col-izq {
+    display: none;
+  }
+  .nos-fila-arr .nos-col-izq,
+  .nos-fila-abj .nos-col-izq {
+    order: 2;
+  }
+  .nos-fila-arr .nos-col-cnt,
+  .nos-fila-abj .nos-col-cnt {
+    order: 1;
+  }
+  .nos-col-izq,
+  .nos-col-der {
+    flex: 100%;
+    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .nos-col-cnt {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+  }
+
+  .nosotros .nos-col-izq .subtitulo,
+  .nosotros .nos-col-izq .parrafo {
+    text-align: center;
+  }
+
+  .nosotros .nos-col-izq a {
+    margin-right: 0;
+  }
+
+  .nosotros .nos-col-der .subtitulo,
+  .nosotros .nos-col-der .parrafo {
+    text-align: center;
+  }
+  .nosotros a {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Contáctenos */    
+  .cont-fila-arr {    
+    flex: 100%;    
+  }  
+  .cont-fila-abj {    
+    flex: 100%;    
+  }  
+}
