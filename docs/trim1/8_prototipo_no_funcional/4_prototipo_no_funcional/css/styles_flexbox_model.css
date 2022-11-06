@@ -18,14 +18,25 @@
   padding: 0;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 /* Cuerpo */
 body {
   background: #ddd;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 /* Borde */
 .borde {
-  border: 1px solid #ccc;
+  border: 1px solid #000;
+}
+
+/* Tope: Navegación */
+.tope{	
+	position: relative;
+	top: -49px;	
 }
 
 /* Fondo color Negro */
@@ -35,12 +46,12 @@ body {
 
 /* Fondo color gris oscuro */
 .color-gris-oscuro {
-  background: #777777;
+  background: #1A5276;
 }
 
 /* Fondo color gris claro */
 .color-gris-claro {
-  background: #aaaaaa;
+  background: #2874A6;
 }
 
 /* Fondo color blanco */
@@ -54,7 +65,7 @@ body {
 /* Títulos */
 .titulo {
   height: 70px;
-  background: #343a40;
+  background: #000;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #fff;
   text-align: center;
@@ -65,7 +76,7 @@ body {
 /* Subtítulos */
 .subtitulo {
   font-family: 'Roboto', sans-serif;
-  background: #ccc;
+  background: #ddd;
   text-align: center;
   padding: 10px;
   border-radius: 5px 5px 0 0;
@@ -96,7 +107,7 @@ body {
 /* ------------------------------------------------------------------------------------- */
 .ver {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  background: #ccc;
+  background: #ddd;
   text-align: center;
   padding: 10px;
   border-radius: 0 0 5px 5px;
@@ -117,12 +128,91 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------- */
+/* MIGAS DE PAN ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------- */
+.migas{
+	display: flex;
+	flex-flow: row nowrap;	
+	align-items: center;
+	padding: 10px;
+}
+.migas a,
+.migas P{
+	text-decoration: none;
+	color: #EEE;
+	font-size: 1.2em;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* OTRAS PÁGINAS DEL LANDING ----------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+.paginas{
+	min-height: 72vh;
+	padding: 10px;
+	display: flex;
+	flex-flow: column wrap;
+  justify-content: flex-start;
+  border: 1px solid #CCC;
+}
+
+/* Páginas con Subtítulos y Párrafos */
+.paginas .subtitulo,
+.paginas .parrafo{
+	text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* TABLAS ------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------- */
+.table{	
+	width: 100%;	
+	border-collapse: collapse;
+}
+.table td, th{	
+  border: 1px solid #DDD;  
+  padding: 6px;
+  text-align: center;  
+}
+.table th{
+	background: #000;
+	color: #FFF;
+}
+.table tr:nth-child(even) {
+  background-color: #DDD;
+}
+.table .tabla-acciones{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+}
+.table .tabla-acciones a{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;	
+	align-items: center;	
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 4px;		
+}
+.table .tabla-acciones .tabla-edit{
+	color: #EEE;
+	background: #2A5159;
+}
+.table .tabla-acciones .tabla-delete{
+	color: #EEE;
+	background: #1A5276;
+	margin-left: 5px;
+}
+
+
+/* ------------------------------------------------------------------------------------- */
 /* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
 /* ------------------------------- ESCRITORIO Y PORTATIL ------------------------------- */
 /* ------------------------------------------------------------------------------------- */
 /* Contenedor */
 .contenedor {
-  width: 90%;
+  width: 95%;
   max-width: 1280px;
   margin: auto;
   display: flex;
@@ -141,7 +231,12 @@ footer {
 
 /* Navegador */
 nav {
-  height: 50px;
+  flex-flow: row wrap;	
+	height: 50px;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	font-size: 1.3em;
 }
 
 /* Logo */
@@ -153,22 +248,61 @@ nav {
   width: 100%;
   height: 100%;
 }
-
 /* Menú */
-.menu {
-  flex: 65%;
-  background: #ef8814;
+.menu{
+	flex: 65%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;	
+	height: 100%;
+	background: #2874A6;
 }
-
+.menu .m-home,
+.menu .m-portafolio,
+.menu .m-nosotros,
+.menu .m-contactenos{
+	flex: 0 0 15%;
+	display: flex;
+}
+.menu a,
+.ingreso a{
+	flex: 1;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+.menu a{
+	color: #000;
+}
+.menu a:hover{
+	background: rgba(0, 0, 0, 0.5);
+	color: #EEE;
+}
 /* Ingreso */
-.ingreso {
-  flex: 15%;
+.ingreso{
+	flex: 15%;
+	display: flex;	
+	height: 100%;		
 }
-
+.ingreso .m-ingreso{
+	flex: 1;
+	display: flex;	
+}
+.ingreso a{	
+	color: #DDD;	
+}
+.ingreso a:hover{
+	background: rgba(255, 255, 255, 0.8);
+	color: #333;
+}
 /* Encabezado */
 header {
   min-height: 83.5vh;
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/sena.jpg);
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -330,7 +464,7 @@ footer .parrafo {
   .menu {
     flex: 80%;
     height: 50px;
-    background: #ef8814;
+    background: #1A5276;
   }
 
   /* Ingreso */
@@ -473,7 +607,7 @@ footer .parrafo {
   .menu {
     flex: auto;
     height: 50px;
-    background: #ef8814;
+    background: #1A5276;
   }
 
   /* Ingreso */
