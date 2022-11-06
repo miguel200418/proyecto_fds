@@ -46,12 +46,12 @@ body {
 
 /* Fondo color gris oscuro */
 .color-gris-oscuro {
-  background: #777777;
+  background: #438F99;
 }
 
 /* Fondo color gris claro */
 .color-gris-claro {
-  background: #aaaaaa;
+  background: #4B9FAB;
 }
 
 /* Fondo color blanco */
@@ -65,7 +65,7 @@ body {
 /* Títulos */
 .titulo {
   height: 70px;
-  background: #343a40;
+  background: #000;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #fff;
   text-align: center;
@@ -201,7 +201,7 @@ body {
 }
 .table .tabla-acciones .tabla-delete{
 	color: #EEE;
-	background: #D34826;
+	background: #4B9FAB;
 	margin-left: 5px;
 }
 
@@ -210,6 +210,40 @@ body {
 /* ------------------------------------------------------------------------------------- */
 /* Validación de Formularios: Html y Css */
 
+form input:focus,
+form textarea:focus{
+	outline: none;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+textarea{
+	border: 1px solid #999;	
+}
+form input[type="text"]:focus:required:invalid,
+form input[type="email"]:focus:required:invalid,
+form input[type="password"]:focus:required:invalid,
+textarea:focus:invalid{
+	border: 2px solid red;
+}
+form input[type="text"]:focus:required:valid,
+form input[type="email"]:focus:required:valid,
+form input[type="password"]:focus:required:valid,
+textarea:focus:required:valid{
+	border: 2px solid green;
+}
+form input[type="text"]:required:invalid,
+form input[type="email"]:required:invalid,
+form input[type="password"]:required:invalid,
+textarea:invalid{
+	border: 1px solid #999;
+}
+form input[type="text"]:required:valid,
+form input[type="email"]:required:valid,
+form input[type="password"]:required:valid,
+textarea:required:valid{
+	border: 2px solid green;
+}
 
 /* Formularios en General */
 .paginas.forms{
@@ -357,7 +391,7 @@ nav {
 	flex-flow: row nowrap;
 	justify-content: flex-end;	
 	height: 100%;
-	background: #EF8814;
+	background: #4B9FAB;
 }
 .menu .m-home,
 .menu .m-portafolio,
@@ -404,8 +438,8 @@ nav {
 /* Encabezado */
 header {
   min-height: 83.5vh;
-  background-image: url(../img/header.jpg);
-  background-size: 100% 100%;
+  background-image: url(../img/banner-g5eae64942_1280.jpg);
+  background-size: 100% 100% ;
   background-attachment: fixed;
 }
 
@@ -566,7 +600,7 @@ footer .parrafo {
   .menu {
     flex: 80%;
     height: 50px;
-    background: #ef8814;
+    background: #438F99;
   }
 
   /* Ingreso */
