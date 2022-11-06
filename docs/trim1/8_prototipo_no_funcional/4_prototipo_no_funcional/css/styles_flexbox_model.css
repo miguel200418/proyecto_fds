@@ -30,7 +30,7 @@ body {
 
 /* Borde */
 .borde {
-  border: 1px solid #000;
+  border: 1px solid #ccc;
 }
 
 /* Tope: Navegación */
@@ -46,12 +46,12 @@ body {
 
 /* Fondo color gris oscuro */
 .color-gris-oscuro {
-  background: #1A5276;
+  background: #777777;
 }
 
 /* Fondo color gris claro */
 .color-gris-claro {
-  background: #2874A6;
+  background: #aaaaaa;
 }
 
 /* Fondo color blanco */
@@ -65,7 +65,7 @@ body {
 /* Títulos */
 .titulo {
   height: 70px;
-  background: #000;
+  background: #343a40;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #fff;
   text-align: center;
@@ -76,7 +76,7 @@ body {
 /* Subtítulos */
 .subtitulo {
   font-family: 'Roboto', sans-serif;
-  background: #ddd;
+  background: #ccc;
   text-align: center;
   padding: 10px;
   border-radius: 5px 5px 0 0;
@@ -107,7 +107,7 @@ body {
 /* ------------------------------------------------------------------------------------- */
 .ver {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  background: #ddd;
+  background: #ccc;
   text-align: center;
   padding: 10px;
   border-radius: 0 0 5px 5px;
@@ -201,10 +201,112 @@ body {
 }
 .table .tabla-acciones .tabla-delete{
 	color: #EEE;
-	background: #1A5276;
+	background: #D34826;
 	margin-left: 5px;
 }
 
+/* ------------------------------------------------------------------------------------- */
+/* FORMULARIOS ------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* Validación de Formularios: Html y Css */
+
+
+/* Formularios en General */
+.paginas.forms{
+	align-items: center;
+	justify-content: center;
+}
+.form{
+	flex: 1;
+	display: flex;
+	flex-flow: column wrap;	
+	font-family: 'Roboto', sans-serif;	
+}
+.form .form-subtitulo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;	
+	border-radius: 4px 4px 0 0;
+	background: #CCC;
+}
+.form .form-cuerpo{
+	flex: 1;
+	display: flex;
+	flex-flow: column wrap;
+	padding: 10px;
+}
+.form-cuerpo .form-control{	
+	display: flex;
+	padding: 5px;
+}
+.form-cuerpo .label{	
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 10px;
+	padding: 5px;
+}
+.form-cuerpo .input,
+.form-cuerpo .textarea{
+	flex: 2;	
+	display: flex;	
+	padding: 5px;
+	font-size: 1em;
+	border-radius: 4px;
+}
+.form-cuerpo .textarea{		
+	resize: none;
+	font-family: 'Roboto', sans-serif;	
+}
+.form .form-pie{
+	flex: 0 0 50px;
+	display: flex;	
+	flex-flow: row nowrap;
+	justify-content: center;
+	padding: 5px;
+	border-radius: 0 0 4px 4px;
+	background: #CCC;
+}
+.form input[type="submit"],
+.form input[type="reset"],
+.form input[type="button"]{
+	flex: 1;
+	cursor: pointer;	
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+}
+/* Formulario de Inicio de Sesión */
+.form-login,
+.form-register,
+.form-forgot{
+	flex: 0 0 100%;
+	width: 60%;
+}
+.form-login .form-subtitulo,
+.form-register .form-subtitulo{
+	border-radius: 0;
+}
+.form-login .enlace-olvido,
+.form-login .enlace-registro,
+.form-register .enlace-registro{
+	flex: 1;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 10px;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: bold;
+}
+.form-login .enlace-registro,
+.form-register .enlace-registro{
+	border-bottom: 1px solid #EEE;
+	border-radius: 4px 4px 0 0;
+	background: #EEE;
+	color: #2A5159;
+}
 
 /* ------------------------------------------------------------------------------------- */
 /* ---------------------------- II. LAYOUT: MAQUETACIÓN WEB ---------------------------- */
@@ -255,7 +357,7 @@ nav {
 	flex-flow: row nowrap;
 	justify-content: flex-end;	
 	height: 100%;
-	background: #2874A6;
+	background: #EF8814;
 }
 .menu .m-home,
 .menu .m-portafolio,
@@ -276,7 +378,7 @@ nav {
 	padding: 10px;
 }
 .menu a{
-	color: #000;
+	color: #343A40;
 }
 .menu a:hover{
 	background: rgba(0, 0, 0, 0.5);
@@ -302,7 +404,7 @@ nav {
 /* Encabezado */
 header {
   min-height: 83.5vh;
-  background-image: url(../img/sena.jpg);
+  background-image: url(../img/header.jpg);
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -464,7 +566,7 @@ footer .parrafo {
   .menu {
     flex: 80%;
     height: 50px;
-    background: #1A5276;
+    background: #ef8814;
   }
 
   /* Ingreso */
@@ -607,7 +709,7 @@ footer .parrafo {
   .menu {
     flex: auto;
     height: 50px;
-    background: #1A5276;
+    background: #ef8814;
   }
 
   /* Ingreso */

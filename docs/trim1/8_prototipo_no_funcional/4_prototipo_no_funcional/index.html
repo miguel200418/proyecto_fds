@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Empresa</title>
-  <link rel="shortcut icon" href="img/logo.jpg" />
+  <link rel="shortcut icon" href="img/imagen-card.jpg" />
   <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="css/styles_flexbox_model.css" />
 </head>
@@ -18,7 +18,7 @@
     <nav>
       <!-- Logo -->
       <div class="logo color-blanco">
-        <img src="img/per.png" alt="Logo" title="Logo">
+        <img src="img/logo-empresa.png" alt="Logo" title="Logo" />
       </div>
       <!-- Menú -->
       <div class="menu">
@@ -29,7 +29,7 @@
       </div>
       <!-- Ingreso -->
       <div class="ingreso color-negro">
-        <div class="m-ingreso"><a href="#">Iniciar Sesión</a></div>
+        <div class="m-ingreso"><a href="pages/login.html">Iniciar Sesión</a></div>
       </div>
     </nav>
     <!-- Encabezado -->
@@ -157,14 +157,34 @@
     <h1 class="titulo">Contáctenos</h1>
     <section class="contactenos">
       <div class="cont-col-izq color-gris-oscuro">
-        <form action="" method="post">
-          <div>
-            <label for="">Nombres</label>
-            <input type="text" name="nombres" placeholder="Nombres">
+        <form class="form" action="index.html#contactenos" method="">
+          <h2 class="form-subtitulo">Formulario de Contacto</h2>
+          <div class="form-cuerpo color-blanco">
+            <div class="form-control">
+              <label class="label" for="nombres">Nombres</label>
+              <input class="input" type="text" id="nombres" placeholder="Nombres">
+            </div>
+            <div class="form-control">
+              <label class="label" for="apellidos">Apellidos</label>
+              <input class="input" type="text" id="apellidos" placeholder="Apellidos">
+            </div>
+            <div class="form-control">
+              <label class="label" for="correo-cont">Correo</label>
+              <input class="input" type="email" id="correo-cont" placeholder="Correo">
+            </div>
+            <div class="form-control">
+              <label class="label" for="asunto">Asunto</label>
+              <input class="input" type="text" id="asunto" placeholder="Asunto">
+            </div>
+            <div class="form-control textarea">
+              <label class="label" for="mensaje">Mensaje</label>
+              <textarea class="textarea" id="mensaje" placeholder="Mensaje"></textarea>
+            </div>
           </div>
-          <div>
+          <div class="form-pie">
+            <input type="reset" value="Cancelar">
             <input type="submit" value="Enviar">
-          </div> 
+          </div>
         </form>
       </div>
       <div class="cont-col-der">
