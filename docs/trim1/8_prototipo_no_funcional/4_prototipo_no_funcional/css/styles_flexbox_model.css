@@ -46,12 +46,12 @@ body {
 
 /* Fondo color gris oscuro */
 .color-gris-oscuro {
-  background: #438F99;
+  background: #777777;
 }
 
 /* Fondo color gris claro */
 .color-gris-claro {
-  background: #4B9FAB;
+  background: #aaaaaa;
 }
 
 /* Fondo color blanco */
@@ -65,7 +65,7 @@ body {
 /* Títulos */
 .titulo {
   height: 70px;
-  background: #000;
+  background: #343a40;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #fff;
   text-align: center;
@@ -201,7 +201,7 @@ body {
 }
 .table .tabla-acciones .tabla-delete{
 	color: #EEE;
-	background: #4B9FAB;
+	background: #D34826;
 	margin-left: 5px;
 }
 
@@ -391,7 +391,7 @@ nav {
 	flex-flow: row nowrap;
 	justify-content: flex-end;	
 	height: 100%;
-	background: #4B9FAB;
+	background: #EF8814;
 }
 .menu .m-home,
 .menu .m-portafolio,
@@ -438,8 +438,8 @@ nav {
 /* Encabezado */
 header {
   min-height: 83.5vh;
-  background-image: url(../img/banner-g5eae64942_1280.jpg);
-  background-size: 100% 100% ;
+  background-image: url(../img/header.jpg);
+  background-size: 100% 100%;
   background-attachment: fixed;
 }
 
@@ -600,7 +600,7 @@ footer .parrafo {
   .menu {
     flex: 80%;
     height: 50px;
-    background: #438F99;
+    background: #ef8814;
   }
 
   /* Ingreso */
