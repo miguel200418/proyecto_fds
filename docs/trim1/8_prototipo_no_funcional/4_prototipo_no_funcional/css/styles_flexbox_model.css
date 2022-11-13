@@ -46,12 +46,12 @@ body {
 
 /* Fondo color gris oscuro */
 .color-gris-oscuro {
-  background: #777777;
+  background: #438F99 ;
 }
 
 /* Fondo color gris claro */
 .color-gris-claro {
-  background: #aaaaaa;
+  background: #4B9FAB;
 }
 
 /* Fondo color blanco */
@@ -65,7 +65,7 @@ body {
 /* Títulos */
 .titulo {
   height: 70px;
-  background: #343a40;
+  background: #000;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   color: #fff;
   text-align: center;
@@ -263,7 +263,7 @@ textarea:required:valid{
 	padding: 10px;
 	font-family: 'Roboto', sans-serif;	
 	border-radius: 4px 4px 0 0;
-	background: #CCC;
+	background: #4B9FAB;
 }
 .form .form-cuerpo{
 	flex: 1;
@@ -391,7 +391,7 @@ nav {
 	flex-flow: row nowrap;
 	justify-content: flex-end;	
 	height: 100%;
-	background: #EF8814;
+	background: #438F99 ;
 }
 .menu .m-home,
 .menu .m-portafolio,
@@ -422,7 +422,8 @@ nav {
 .ingreso{
 	flex: 15%;
 	display: flex;	
-	height: 100%;		
+	height: 100%;
+  background: #000;		
 }
 .ingreso .m-ingreso{
 	flex: 1;
@@ -438,7 +439,7 @@ nav {
 /* Encabezado */
 header {
   min-height: 83.5vh;
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/istockphoto.jpg);
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -600,7 +601,7 @@ footer .parrafo {
   .menu {
     flex: 80%;
     height: 50px;
-    background: #ef8814;
+    background: #4B9FAB;
   }
 
   /* Ingreso */
@@ -743,7 +744,7 @@ footer .parrafo {
   .menu {
     flex: auto;
     height: 50px;
-    background: #ef8814;
+    background: #4B9FAB;
   }
 
   /* Ingreso */

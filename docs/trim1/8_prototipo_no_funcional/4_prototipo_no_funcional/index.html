@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Empresa</title>
-  <link rel="shortcut icon" href="img/imagen-card.jpg" />
+  <link rel="shortcut icon" href="img/sena.png" />
   <link rel="stylesheet" href="css/all.css" />
   <link rel="stylesheet" href="css/styles_flexbox_model.css" />  
 </head>
@@ -18,7 +18,7 @@
     <nav>
       <!-- Logo -->
       <div class="logo color-blanco">
-        <img src="img/logo-empresa.png" alt="Logo" title="Logo" />
+        <img src="img/2.png" alt="Logo" title="Logo" />
       </div>
       <!-- Menú -->
       <div class="menu">
@@ -41,7 +41,7 @@
       <div class="port-col-izq color-gris-oscuro">
         <h2 class="borde subtitulo">Tablas</h2>
         <div class="borde imagen">
-          <img src="img/imagen-card.jpg" alt="Logo" title="Logo" />
+          <img src="img/sena.png" alt="Logo" title="Logo" />
         </div>
         <p class="parrafo borde">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -58,7 +58,7 @@
       <div class="port-col-cnt color-">
         <h2 class="borde subtitulo">Subtítulo</h2>
         <div class="borde imagen">
-          <img src="img/imagen-card.jpg" alt="Logo" title="Logo" />
+          <img src="img/sena.png" alt="Logo" title="Logo" />
         </div>
         <p class="parrafo borde">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -75,7 +75,7 @@
       <div class="port-col-der color-gris-claro">
         <h2 class="borde subtitulo">Subtítulo</h2>
         <div class="borde imagen">
-          <img src="img/imagen-card.jpg" alt="Logo" title="Logo" />
+          <img src="img/sena.png" alt="Logo" title="Logo" />
         </div>
         <p class="parrafo borde">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -109,17 +109,17 @@
           </div>
         </div>
         <div class="nos-col-cnt imagen color-gris-oscuro">
-          <img src="img/imagen-card.jpg" alt="imagen-card" title="imagen-card" />
+          <img src="img/sena.png" alt="imagen-sena" title="imagen-sena" />
         </div>
         <div class="nos-col-der color-gris-claro"></div>
       </div>
       <div class="nos-fila-cnt">
         <div class="nos-col-izq color-gris-oscuro"></div>
         <div class="nos-col-cnt imagen color-blanco">
-          <img src="img/imagen-card.jpg" alt="imagen-card" title="imagen-card" />
+          <img src="img/sena.png" alt="imagen-sena" title="imagen-sena" />
         </div>
         <div class="nos-col-der color-gris-oscuro">
-          <div class="card">
+          <div class="sena">
             <h2 class="borde subtitulo">Subtítulo</h2>
             <p class="borde parrafo">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -147,7 +147,7 @@
           </div>
         </div>
         <div class="nos-col-cnt imagen color-gris-oscuro">
-          <img src="img/imagen-card.jpg" alt="imagen-card" title="imagen-card" />
+          <img src="img/sena.png" alt="imagen-sena" title="imagen-sena" />
         </div>
         <div class="nos-col-der color-gris-claro"></div>
       </div>
@@ -157,33 +157,35 @@
     <h1 class="titulo">Contáctenos</h1>
     <section class="contactenos">
       <div class="cont-col-izq color-gris-oscuro">
-        <form class="form" action="index.html#contactenos" method="">
+        <form class="form" action="" method="">
           <h2 class="form-subtitulo">Formulario de Contacto</h2>
           <div class="form-cuerpo color-blanco">
             <div class="form-control">
               <label class="label" for="nombres">Nombres</label>
-              <input class="input" type="text" id="nombres" placeholder="Nombres">
+              <input class="input" type="text" id="nombres" placeholder="Nombres" pattern="[ a-zA-ZáéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙñÑ]{2,50}" 
+              title="Ingrese Nombre(s) Válido(s)" required>
             </div>
             <div class="form-control">
               <label class="label" for="apellidos">Apellidos</label>
-              <input class="input" type="text" id="apellidos" placeholder="Apellidos">
+              <input class="input" type="text" id="apellidos" placeholder="Apellidos" pattern="[ a-zA-ZáéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙñÑ]{2,50}" 
+              title="Ingrese Apellidos(s) Válido(s)" required>
             </div>
             <div class="form-control">
               <label class="label" for="correo-cont">Correo</label>
-              <input class="input" type="email" id="correo-cont" placeholder="Correo">
+              <input class="input" type="email" id="correo-cont" placeholder="Correo" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}" title="Ingrese un Correo Válido" required>
             </div>
             <div class="form-control">
               <label class="label" for="asunto">Asunto</label>
-              <input class="input" type="text" id="asunto" placeholder="Asunto">
+              <input class="input" type="text" id="asunto" placeholder="Asunto" pattern="[ a-zA-ZáéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙñÑ]{10,50}" title="Ingrese un Asunto Válido con solo caracteres" required>
             </div>
             <div class="form-control textarea">
               <label class="label" for="mensaje">Mensaje</label>
-              <textarea class="textarea" id="mensaje" placeholder="Mensaje"></textarea>
+              <textarea class="textarea" id="mensaje" placeholder="Mensaje" pattern="[ a-zA-Z0-9_áéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙñÑ]" minlength="30" maxlength="300" title="Ingrese mínimo 30 y máximo 300 Caracteres" required></textarea>
             </div>
           </div>
           <div class="form-pie">
-            <input type="reset" value="Cancelar">
-            <input type="submit" value="Enviar">
+            <input type="reset" id="cancelar-contac" value="Cancelar">
+            <input type="submit" id="submit-contac" value="Enviar">
           </div>
         </form>
       </div>
@@ -222,6 +224,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/sweetalert.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
